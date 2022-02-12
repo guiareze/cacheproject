@@ -12,6 +12,9 @@ import java.time.LocalDateTime;
 @Builder
 public class RetornoPagamento {
 
+    @JsonProperty("id_pagamento")
+    private Long idPagamento;
+
     @JsonProperty("status_pagamento")
     private String statusPagamento;
 

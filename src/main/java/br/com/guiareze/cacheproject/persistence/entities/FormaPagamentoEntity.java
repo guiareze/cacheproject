@@ -1,8 +1,6 @@
 package br.com.guiareze.cacheproject.persistence.entities;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -11,6 +9,8 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class FormaPagamentoEntity {
 
     @Id
@@ -19,6 +19,6 @@ public class FormaPagamentoEntity {
     private Long idFormaPagamento;
 
     @Column(name ="nome_forma_pgto", columnDefinition = "VARCHAR", length = 30)
-    private String nomeComprador;
+    private String nomeFormaPgto;
 
 }
